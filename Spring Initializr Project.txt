@@ -1,0 +1,1 @@
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=17&groupId=com.treinamento&artifactId=dosports&name=doSports&description=Projeto%20Spring%20para%20facilitar%20e%20gerenciar%20eventos%20esportivos.&packageName=com.treinamento.dosports&dependencies=lombok,web,devtools,configuration-processor,data-jpa
