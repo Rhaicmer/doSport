@@ -1,5 +1,5 @@
 # --- Estágio de Build (melhora o desempenho de cache) ---
-FROM openjdk:17-jdk-slim AS build
+FROM openjdk:17-jdk-slim AS build # Esta linha parece estar correta
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
@@ -22,7 +22,8 @@ COPY src ./src
 RUN ./mvnw clean package -DskipTests
 
 # --- Estágio de Runtime (imagem final menor) ---
-FROM openjdk:17-jre-slim
+# ALtere esta linha:
+FROM openjdk:17-jre-slim-buster # OU openjdk:17-slim (se preferir uma imagem ainda mais básica)
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
