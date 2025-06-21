@@ -1,5 +1,5 @@
 # --- Estágio de Build (melhora o desempenho de cache) ---
-FROM openjdk:17-jdk-slim AS build # Removido o comentário aqui
+FROM openjdk:17-jdk-slim AS build 
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
