@@ -22,7 +22,7 @@ COPY src ./src
 RUN ./mvnw clean package -DskipTests
 
 # --- Estágio de Runtime (imagem final menor) ---
-FROM openjdk:17-jre-slim-buster 
+FROM openjdk:17-alpine
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
